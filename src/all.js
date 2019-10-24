@@ -41,7 +41,7 @@ class Allgrid extends Component {
                 <section id="sec">
                 <ul>
                 {companies.map((company)=> company.type === "techincal" ? (            
-                      <SimpleCard title={company.name} type={company.type} stipend={company.stipend} location={company.location} duration={company.duration} link={company.link} id={company.id}></SimpleCard>
+                      <SimpleCard description={company.description} requirement={company.requirement} title={company.name} type={company.type} stipend={company.stipend} location={company.location} duration={company.duration} link={company.link} id={company.id}></SimpleCard>
                     ) :(null)
                     
                 )}
@@ -53,7 +53,7 @@ class Allgrid extends Component {
                 <section id="sec">
                 <ul>
                 {companies.map((company)=> company.type === "management" ? (
-                      <SimpleCard title={company.name} type={company.type} stipend={company.stipend} location={company.location} duration={company.duration} link={company.link} id={company.id}></SimpleCard>
+                      <SimpleCard description={company.description} requirement={company.requirement} title={company.name} type={company.type} stipend={company.stipend} location={company.location} duration={company.duration} link={company.link} id={company.id}></SimpleCard>
                     ) :(null)
                     
                 )}
